@@ -35,9 +35,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: Build react app using yarn
-      uses: borales/actions-yarn@v2.0.0
-      with:
-          cmd: build # will run `yarn build` command
+      run: yarn build
 
   # This workflow contains a single job called "deploy-surge"
   deploy-surge:
