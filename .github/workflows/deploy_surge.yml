@@ -53,10 +53,10 @@ jobs:
     - uses: actions/checkout@v2
     # Runs command using the runners shell
     - name: install surge
-      run: yarn add surge
+      run: npm install -g surge
     
     # Deploy to surge using auth token saved in settings -> secrets
     - name: deploy to surge hosting
-      run: surge ./ react_bootcamp_slucky.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build react_bootcamp_slucky.surge.sh --token ${{ secrets.SURGE_TOKEN }}
     
   
