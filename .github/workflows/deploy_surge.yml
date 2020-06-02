@@ -35,9 +35,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
       
-    - name: Delete node_modules
-      run: rm -rf node_modules
-    - name: install node_modules
+    - name: install node_modules (bugfix react-scripts command not found)
       run: yarn install
       
     - name: Build react app using yarn
