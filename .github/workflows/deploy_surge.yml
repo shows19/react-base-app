@@ -52,6 +52,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     # Runs command using the runners shell
+    - name: check yarn global bin
+      run: yarn global bin
+      
     - name: install surge
       run: yarn add global surge
     
