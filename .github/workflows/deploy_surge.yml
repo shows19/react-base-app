@@ -60,6 +60,6 @@ jobs:
     
     # Deploy to surge using auth token saved in settings -> secrets
     - name: deploy to surge hosting
-      run: ./home/runner/.yarn/bin/surge ./build react_bootcamp_slucky.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: /home/runner/.yarn/bin/surge ./build react_bootcamp_slucky.surge.sh --token ${{ secrets.SURGE_TOKEN }}
     
   
