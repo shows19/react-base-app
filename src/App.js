@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App({name}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-		<p>Shoaib S. Lucky</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+		<div className="bigHeading">Hello <strong>{name}!</strong></div>
+		<h1>Headings</h1>
+		<h2>This is a sample h2 heading</h2>
+		<p>Lets try some sample paragraph multiple lines.</p>
+		<h2>My favourite fruits:</h2>
+		<ul>
+			<li>Apple</li>
+			<li>Mango</li>
+			<li>Water Melon</li>
+			<li>Sweet Melon</li>
+			<li>Pomegranate</li>
+		</ul>
+		<br />
+		<h2>Java script expressions</h2>
+		<span>50 + 3 = {50+3}</span>
     </div>
   );
 }
